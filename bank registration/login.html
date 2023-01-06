@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to online banking registration</title>
+  <link rel="shortcut icon" href="./assets/images/favicon.jfif" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/main.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="logo-container">
+        <img src="./assets/images/logo.jpg" alt="logo" class="logo">
+      </div>
+      <div class="security">
+        <a href="#">
+          <i class='bx bx-lock'></i>
+          <p>Secure</p>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div class="hero-container">
+    <section class="info">
+      <div class="text-container">
+        <h1 class="main-text">Log in to Online Banking</h1>
+      </div>
+    </section>
+  </div>
+  <section class="login-method">
+    <h1 class="section-title">How would you like to log in?</h1>
+    <p>Not registered for Online Banking? <a href="registration.html"> Register now</a></p>
+    <div class="login-methods-container">
+      <div class="login-method">
+        <div class="method active-method" id="membershipMethod">
+          <p>Membership number</p>
+        </div>
+        <div class="method" id="cardMethod">
+          <p>Card number</p>
+        </div>
+        <div class="method" id="accountMethod">
+          <p>Sort code and account number</p>
+        </div>
+        <div class="input radios">
+          <div class="radio">
+            <input type="radio" id="membershipMethod" name="accountType" value="account">
+          <label for="account"> Membership number</label>
+          </div>
+          <div class="radio">
+            <input type="radio" id="cardMethod" name="accountType" value="account">
+          <label for="account">Card number</label>
+          </div>
+          <div class="radio">
+            <input type="radio" id="accountMethod" name="accountType" value="account">
+          <label for="account"> Merchant account</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- main section -->
+  <main>
+    <section class="registration-details">
+        <form>
+        <div class="detail">
+          <div class="form-input">
+            <div class="form-title">
+              <label for="surname">surname/lastname</label>
+            <button class="show-details bgless"><i class='bx bx-question-mark'></i></button>
+            </div>
+          <div class="info">
+            <div class="info-p-container hidden-p">
+              <p class="info-p">Type your surname (family name) as it appears on your most recent statement.</p>
+            </div>
+          </div>
+          <div class="input">
+            <input type="text" name="surname">
+          </div>
+          </div>
+        </div>
+        <div class="detail" id="membershipForm">
+          <div class="form-input">
+            <div class="form-title">
+              <label for="surname">membership number(12 digits)</label>
+            </div>
+          <div class="input">
+            <input type="number" name="cardNumber">
+          </div>
+          </div>
+        </div>
+        <div class="detail hidden-p" id="cardForm">
+          
+          <div class="form-input">
+            <div class="form-title">
+              <label for="surname">Card number (16 digits)</label>
+            <button class="show-details bgless"><i class='bx bx-question-mark'></i></button>
+            </div>
+          <div class="info">
+            <div class="info-p-container hidden-p">
+              <p class="info-p">Enter the 16-digit card number that runs across the middle of the front of your debit card.</p>
+            </div>
+          </div>
+          <div class="input">
+            <input type="number" name="cardNumber">
+          </div>
+          </div>
+        </div>
+        <div class="detail hidden-p" id="accountForm">
+          <div class="form-input">
+            <div class="form-title">
+              <label for="dob">sort code</label>
+              <button class="show-details bgless"><i class='bx bx-question-mark'></i></button>
+            </div>
+            <div class="info">
+            <div class="info-p-container hidden-p">
+              <p class="info-p">You can find your sort code on your debit card or chequebook. It should appear in this format: xx-xx-xx.</p>
+            </div>
+          </div>
+          <div class="input multiple sort">
+            <input type="number" placeholder="20">
+            <input type="number" >
+            <input type="number" >
+          </div>
+          </div>
+          <div class="form-input">
+            <div class="form-title">
+              <label for="surname">account number</label>
+            </div>
+          <div class="input">
+            <input type="number" name="cardNumber">
+          </div>
+          </div>
+        </div>
+        <div class="detail">
+          <div class="form-input">
+            <div class="input row">
+              <input type="checkbox" name="surname">
+              <p class="detail-p">
+                Remember my last name and login method
+                <br> Don't tick the box if you're using a public or shared device
+              </p>
+            </div>
+            </div>
+        </div>
+        <div class="detail btn-holder noHr">
+            <button class="cta">continue</button>
+        </div>
+      </form>
+
+
+    </section>
+  </main>
+  <div class="faq-holder">
+    <section class="faq-section">
+      <h1 class="section-title">Frequently asked questions</h1>
+      <div class="faq-container">
+        <div class="faq-content">
+          <div class="faq passive-q">
+            <div class="question">
+              <div class="arrow">
+                <i class='bx bx-chevron-right'></i>
+              </div><p>Service status</p>
+            </div>
+            <div class="answer">
+              <p>To check how our services are running and see our planned maintenance, head to <a href="status.uk.barclays">status.uk.barclays</a> or type ‘status.barclays’ into your browser</p>
+            </div>
+          </div>
+          <div class="faq  passive-q">
+            <div class="question">
+              <div class="arrow">
+                <i class='bx bx-chevron-right'></i>
+              </div><p>Is saving my details safe?</p>
+            </div>
+            <div class="answer">
+              <p>If you tick the 'remember me' box, your details will only be retained on the device you're using at the time. That's why we don't recommend you do so on any public or shared devices. This means you don't need to worry about anyone else seeing the details. Even if they do, there isn't enough information there for anyone to access your accounts in Online Banking or any other way. <br><br>
+
+                If you want to save your details, you need to make sure you've switched cookies on for your browser – that's how the information is stored.</p>
+            </div>
+          </div>
+          <div class="faq  passive-q">
+            <div class="question">
+              <div class="arrow">
+                <i class='bx bx-chevron-right'></i>
+              </div><p>What does error code 6 mean?</p>
+            </div>
+            <div class="answer">
+              <p>If you're having problems logging in to Online Banking, you may need to clear your internet browser's cache or update the browser. <br><br>
+
+                Below is a guide to clearing the cache for the most common browsers. You can also find the information in your browser's 'help' section.<br><br>
+                
+                
+                <h1 class="section-title">PC users:</h1>
+                Internet Explorer (IE) – press Ctrl, Shift and Delete together, then select 'temporary internet files' and click 'delete'<br><br>
+                
+                Chrome – press Ctrl, Shift and Delete together. In the 'clear browsing data window', select 'cached images and files' only, then click 'clear browsing data'<br><br>
+                
+                Firefox – press Ctrl, Shift and Delete together, then select 'clear recent history', select 'cache' only within 'details', then click 'clear now'<br><br>
+                
+                Safari – press Ctrl, Alt and the letter E together, then select 'empty'<br><br>
+                
+                
+                <h1 class="section-title">Mac users:</h1>
+                Chrome – Cmd, Shift and the letter R together<br><br>
+                
+                Firefox – Cmd, Shift and the letter R together<br><br>
+                
+                Safari – Cmd, Alt button and the letter E together<br><br>
+                
+                To update your browser, please check your browser's help section.</p>
+            </div>
+          </div>
+          <div class="faq  passive-q">
+            <div class="question">
+              <div class="arrow">
+                <i class='bx bx-chevron-right'></i>
+              </div><p>How do I login with Mobile PINsentry?</p>
+            </div>
+            <div class="answer">
+              <p>If you haven't logged in to the app, tap the 'PINsentry' button in the top left-hand corner of the log-in screen.
+
+                If you're already logged in, tap the menu icon in the top left-hand corner and then select 'Mobile PINsentry' from the list.
+                
+                Once you're on the Mobile PINsentry page, select 'Identify' and follow the on-screen instructions.
+                
+                Watch our video to find out how to use Mobile PINsentry at <a href="#">www.barclays.co.uk/help/mobile-banking/pinsentry/info/</a></p>
+            </div>
+          </div>
+          <div class="faq  passive-q">
+            <div class="question">
+              <div class="arrow">
+                <i class='bx bx-chevron-right'></i>
+              </div><p>How to reset your memorable word and passcode?</p>
+            </div>
+            <div class="answer">
+              <p>If you need help resetting your memorable word and passcode, you can <a href="#">find out how</a> or watch our video.</p>
+            </div>
+          </div>
+        </div>
+        <button class="btn">need more help?</button>
+      </div>
+    </section>
+  </div>
+  <section class="certification">
+    <div class="links">
+      <a href="#"> Service status</a>
+      <a href="#"> contact us</a>
+      <a href="#"> security</a>
+      <a href="#"> accessibility</a>
+      <a href="#"> See our cookies policy</a>
+    </div>
+    <div class="certification-texts">
+      <p>
+        Barclays Bank UK PLC and Barclays Bank PLC are each authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority. <br><br>
+
+Barclays Insurance Services Company Limited and Barclays Investment Solutions Limited are each authorised and regulated by the Financial Conduct Authority. <br><br>
+
+Registered office for all: 1 Churchill Place, London E14 5HP
+      </p>
+    </div>
+    <div class="image-container">
+      <img src="./assets/images/1321217916492-iso27001footer.jpg" alt="">
+      <img src="./assets/images/1321217916907-bsikitemarklogo.jpg" alt="">
+      <img src="./assets/images/1321217918424-cyberfooter.jpg" alt="">
+      <img src="./assets/images/login-fscs.png" alt="">
+    </div>
+  </section>
+  <script src="./assets/js/login.js"></script>
+  <script src="./assets/js/registration.js"></script>
+</body>
+</html>
